@@ -1,9 +1,38 @@
+<<<<<<< HEAD
 import { useEffect, useMemo, useState } from "react";
+=======
+<<<<<<< HEAD
+import { useEffect, useMemo, useState } from "react";
+=======
+<<<<<<< HEAD
+import { useEffect, useMemo, useState } from "react";
+=======
+<<<<<<< HEAD
+import { useEffect, useMemo, useState } from "react";
+=======
+import { useMemo, useState } from "react";
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
 import { ArrowLeft, ArrowRight, Check, Download, LoaderCircle, Ruler, ShoppingCart } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import Dropzone from "../components/Dropzone";
 import ModelViewer from "../components/ModelViewer";
 import { convertImageToStl, getVendors } from "../services/api";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import { useEffect } from "react";
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
 
 const materials = [
   ["PLA", "Best for prototypes & decorative parts", 1],
@@ -20,6 +49,16 @@ export default function Configure() {
   const [vendors, setVendors] = useState([]);
   const navigate = useNavigate();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
   useEffect(() => {
     getVendors({ featured: true }).then(r => setVendors(r.data)).catch(() => {});
   }, []);
@@ -43,16 +82,53 @@ export default function Configure() {
     (numericForm.width * numericForm.depth * 0.018 + numericForm.height * 22)
       * materialFactor * Math.max(1, Number(form.quantity) || 1)
   )), [numericForm.width, numericForm.depth, numericForm.height, materialFactor, form.quantity]);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  useEffect(() => { getVendors({ featured: true }).then(r => setVendors(r.data)).catch(() => {}); }, []);
+
+  const materialFactor = materials.find(m => m[0] === form.material)?.[2] || 1;
+  const estimate = useMemo(() => Math.max(299, Math.round((form.width * form.depth * 0.018 + form.height * 22) * materialFactor * form.quantity)), [form, materialFactor]);
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
 
   const generate = async () => {
     if (!file) return alert("Please upload an image first.");
     setLoading(true);
     try {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
       const res = await convertImageToStl(file, {
         width: numericForm.width,
         depth: numericForm.depth,
         height: numericForm.height
       });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      const res = await convertImageToStl(file, { width: form.width, depth: form.depth, height: form.height });
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
       setAsset(res.data);
     } catch (e) {
       alert(e.response?.data?.message || "Model generation failed.");
@@ -72,7 +148,23 @@ export default function Configure() {
         <div className="builder-layout">
           <aside className="builder-panel">
             <div className="step-label"><span>01</span> SOURCE IMAGE</div>
+<<<<<<< HEAD
             {!file ? <Dropzone onFile={setFile}/> : <div className="uploaded-preview"><img src={previewUrl} alt="source" /><div><strong>{file.name}</strong><small>{Math.round(file.size/1024)} KB</small></div><button onClick={() => {setFile(null);setAsset(null)}}>Change</button></div>}
+=======
+<<<<<<< HEAD
+            {!file ? <Dropzone onFile={setFile}/> : <div className="uploaded-preview"><img src={previewUrl} alt="source" /><div><strong>{file.name}</strong><small>{Math.round(file.size/1024)} KB</small></div><button onClick={() => {setFile(null);setAsset(null)}}>Change</button></div>}
+=======
+<<<<<<< HEAD
+            {!file ? <Dropzone onFile={setFile}/> : <div className="uploaded-preview"><img src={previewUrl} alt="source" /><div><strong>{file.name}</strong><small>{Math.round(file.size/1024)} KB</small></div><button onClick={() => {setFile(null);setAsset(null)}}>Change</button></div>}
+=======
+<<<<<<< HEAD
+            {!file ? <Dropzone onFile={setFile}/> : <div className="uploaded-preview"><img src={previewUrl} alt="source" /><div><strong>{file.name}</strong><small>{Math.round(file.size/1024)} KB</small></div><button onClick={() => {setFile(null);setAsset(null)}}>Change</button></div>}
+=======
+            {!file ? <Dropzone onFile={setFile}/> : <div className="uploaded-preview"><img src={URL.createObjectURL(file)} alt="source"/><div><strong>{file.name}</strong><small>{Math.round(file.size/1024)} KB</small></div><button onClick={() => {setFile(null);setAsset(null)}}>Change</button></div>}
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
             <div className="step-label"><span>02</span> MODEL SIZE</div>
             <div className="field-grid three">
               <label>Width (mm)<input type="number" value={form.width} min="20" max="300" onChange={e=>change("width", e.target.value)}/></label>

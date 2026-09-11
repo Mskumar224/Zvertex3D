@@ -1,5 +1,21 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import { ArrowUpRight, Menu, X, LogIn, Store } from "lucide-react";
+=======
+<<<<<<< HEAD
+import { ArrowUpRight, Menu, X, LogIn, Store } from "lucide-react";
+=======
+<<<<<<< HEAD
+import { ArrowUpRight, Menu, X, LogIn, Store } from "lucide-react";
+=======
+<<<<<<< HEAD
+import { ArrowUpRight, Menu, X, LogIn, Store } from "lucide-react";
+=======
+import { ArrowUpRight, Menu, X, LogIn, Store, Rocket } from "lucide-react";
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
 import { useState } from "react";
 export default function Navbar(){
  const [open,setOpen]=useState(false); const navigate=useNavigate(); const token=localStorage.getItem("zv_token");

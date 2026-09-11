@@ -1,6 +1,26 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { ExternalLink, Package, Save, Store } from "lucide-react";
 import { getMe, getVendorOrders, updateVendor } from "../services/api";
+=======
+<<<<<<< HEAD
+import { ExternalLink, Package, Save, Store } from "lucide-react";
+import { getMe, getVendorOrders, updateVendor } from "../services/api";
+=======
+<<<<<<< HEAD
+import { ExternalLink, Package, Save, Store } from "lucide-react";
+import { getMe, getVendorOrders, updateVendor } from "../services/api";
+=======
+<<<<<<< HEAD
+import { ExternalLink, Package, Save, Store } from "lucide-react";
+import { getMe, getVendorOrders, updateVendor } from "../services/api";
+=======
+import { ExternalLink, Package, Save, Store, Truck } from "lucide-react";
+import { getMe, getVendorOrders, getStore, updateVendor } from "../services/api";
+>>>>>>> 6749823fb1f85adf6e3b7e3523847c8ec5eea842
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
+>>>>>>> f5f7d408740acf640b490ad955179b89f222a19c
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
 import { Link } from "react-router-dom";
 
 export default function VendorDashboard(){
