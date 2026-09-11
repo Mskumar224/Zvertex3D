@@ -1,7 +1,11 @@
 {
   "name": "zvertex3d-web",
   "private": true,
+<<<<<<< HEAD
   "version": "2.5.0",
+=======
+  "version": "2.4.0",
+>>>>>>> 198dc3267cce374489a058aa74e737c1402dcabb
   "type": "module",
   "scripts": {
     "dev": "vite",
