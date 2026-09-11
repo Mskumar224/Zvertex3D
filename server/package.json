@@ -1,5 +1,12 @@
 {
   "name": "zvertex3d-api",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ff7eff4da625b0aa81943bb92486aeaeca350f5
+>>>>>>> bfa6eea49934b7beb4ebc42a1ae246db25ad53c1
   "version": "2.4.3",
   "private": true,
   "main": "server.js",
@@ -17,5 +24,36 @@
     "multer":"^2.0.2",
     "nodemailer":"^7.0.5",
     "sharp":"^0.34.3"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  "version": "2.4.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed:admin": "node seed.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "sharp": "^0.34.3"
+>>>>>>> 198dc3267cce374489a058aa74e737c1402dcabb
+>>>>>>> 4ff7eff4da625b0aa81943bb92486aeaeca350f5
+>>>>>>> bfa6eea49934b7beb4ebc42a1ae246db25ad53c1
   }
 }

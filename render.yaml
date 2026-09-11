@@ -14,14 +14,39 @@ services:
         value: 10000
       - key: SUPABASE_URL
         sync: false
+<<<<<<< HEAD
       - key: SUPABASE_SECRET_KEY
         sync: false
+=======
+<<<<<<< HEAD
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+=======
+<<<<<<< HEAD
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+=======
+>>>>>>> 198dc3267cce374489a058aa74e737c1402dcabb
+>>>>>>> 4ff7eff4da625b0aa81943bb92486aeaeca350f5
+>>>>>>> bfa6eea49934b7beb4ebc42a1ae246db25ad53c1
       - key: SUPABASE_SERVICE_ROLE_KEY
         sync: false
       - key: JWT_SECRET
         generateValue: true
       - key: CLIENT_URL
+<<<<<<< HEAD
         value: https://zvertex3d.com,https://www.zvertex3d.com
+=======
+<<<<<<< HEAD
+        value: https://zvertex3d.com,https://www.zvertex3d.com
+=======
+<<<<<<< HEAD
+        value: https://zvertex3d.com,https://www.zvertex3d.com
+=======
+        sync: false
+>>>>>>> 198dc3267cce374489a058aa74e737c1402dcabb
+>>>>>>> 4ff7eff4da625b0aa81943bb92486aeaeca350f5
+>>>>>>> bfa6eea49934b7beb4ebc42a1ae246db25ad53c1
       - key: SMTP_HOST
         value: smtp.gmail.com
       - key: SMTP_PORT
