@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+<<<<<<< HEAD
     "build": "node scripts/check-no-conflicts.mjs && vite build",
+=======
+    "build": "vite build",
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,4 +26,8 @@
     "@vitejs/plugin-react": "^5.0.2",
     "vite": "^7.1.3"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5fe4c532631c49952bf7e16bbac69a863f154676
