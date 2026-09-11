@@ -1,6 +1,7 @@
 * text=auto eol=lf
 *.bat text eol=crlf
 *.cmd text eol=crlf
+<<<<<<< HEAD
 *.png binary
 *.jpg binary
 *.jpeg binary
@@ -8,3 +9,5 @@
 *.webp binary
 *.glb binary
 *.gltf text
+=======
+>>>>>>> 9b96cf9f299962791c8d548b0cb442523367cf3e

@@ -1,9 +1,22 @@
 # Zvertex3D v2.5.1 — Production Pre-Deploy Notes
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+This package has been cleaned for Git and deployment-critical issues.
+
+## Verified
+- Git merge-conflict detection script only flags real 7-character conflict-marker lines; decorative CSS separators are not treated as conflicts.
+=======
+>>>>>>> 9b96cf9f299962791c8d548b0cb442523367cf3e
 This package has been reviewed for deployment-critical issues.
 
 ## Verified
 - No Git merge-conflict markers in source/config files.
+<<<<<<< HEAD
+=======
+>>>>>>> 0e9e6f07bd68a8be2c5da3b5054c33dec9b12c54
+>>>>>>> 9b96cf9f299962791c8d548b0cb442523367cf3e
 - Server JavaScript passes `node --check`.
 - `client/package.json` and `server/package.json` are valid JSON.
 - Netlify SPA fallback is configured in `netlify.toml`.
